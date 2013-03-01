@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="layout.xhtml">
+	<ui:define name="headerPage">
+	</ui:define>
+	<ui:param name="onLoadJS" value="" />
+	<ui:define name="content">
+		<h:form id="form">
+			<div class="layoutcenterDiv">
+				<div style="">
+					<h:panelGrid columns="3" cellpadding="10" >  
+							
+							<h:inputHidden />
+							
+							<p:commandButton icon="ui-icon-arrow-1-n" styleClass="ui-priority-primary" id="popoverNorte" value="Norte" />
+							
+							<h:inputHidden />
+							
+							
+							<p:commandButton icon="ui-icon-arrow-1-w" styleClass="ui-priority-primary" id="popoverOeste" value="Oeste" />
+							
+							<h:inputHidden />
+												
+							<p:commandButton icon="ui-icon-arrow-1-e" styleClass="ui-priority-primary" id="popoverEste" value="Este" />
+							
+							
+							<h:inputHidden />
+							
+							<p:commandButton icon="ui-icon-arrow-1-s" styleClass="ui-priority-primary" id="popoverSur" value="Sur" />
+							
+							<h:inputHidden />
+				
+					</h:panelGrid>
+				</div>
+			</div>
+			
+			<div id="norte" style="display: none;" >
+				<h:outputLabel value="Norte" />
+			</div>
+		
+			<div id="sur" style="display: none;" >
+				<h:outputLabel value="sur" />
+			</div>
+			
+			<div id="este" style="display: none;" >
+				<h:outputLabel value="Este" />
+			</div>
+			
+			<div id="oeste" style="display: none;" >
+				<h:outputLabel value="Oeste" />
+			</div>
+		</h:form>	
+	</ui:define>
+	<ui:define name="modalPanels">
+	</ui:define>	
+</ui:composition>
+</html>
