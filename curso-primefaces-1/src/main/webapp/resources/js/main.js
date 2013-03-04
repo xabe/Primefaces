@@ -23,6 +23,7 @@ $(document).ready(function() {
 			animation : true,
 			trigger : 'manual',
 			html : true,
+			title : $('#norteHeader').html(),
 			content: $('#norte').html()
 		}).click(function(e) {
 	        $(this).popover('show');
@@ -41,6 +42,7 @@ $(document).ready(function() {
 			animation : true,
 			trigger : 'manual',
 			html : true,
+			title : $('#surHeader').html(),
 			content: $('#sur').html()
 		}).click(function(e) {
 	        $(this).popover('show');
@@ -58,6 +60,7 @@ $(document).ready(function() {
 			animation : true,
 			trigger : 'manual',
 			html : true,
+			title : $('#esteHeader').html(),
 			content: $('#este').html()
 		}).click(function(e) {
 	        $(this).popover('show');
@@ -75,6 +78,7 @@ $(document).ready(function() {
 			animation : true,
 			trigger : 'manual',
 			html : true,
+			title : $('#oesteHeader').html(),
 			content: $('#oeste').html()
 		}).click(function(e) {
 	        $(this).popover('show');
