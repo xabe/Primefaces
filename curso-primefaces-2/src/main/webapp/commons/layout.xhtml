@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:sec="http://www.springframework.org/security/facelets/tags"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Curso primefaces 2</title>
+
+	<h:outputStylesheet name="css/reset.css" />
+	<h:outputStylesheet name="css/layout.css" />
+	
+	<h:outputScript name="js/main.js" />	
+	
+	<ui:insert name="headerPage"></ui:insert>
+</h:head>
+
+<h:body onload="#{onLoadJS}">
+	<f:view contentType="text/html">
+		<ui:insert name="header">
+				<ui:include src="header.xhtml" />
+		</ui:insert>
+
+		<div class="layoutCenter">
+		
+			<h:panelGroup id="globalMessages" styleClass="layoutCenterMessages" layout="block">
+				<p:messages id="generarMessages" globalOnly="true" showDetail="true" showSummary="false" />
+			</h:panelGroup>
+				
+			<div class="layoutCenterTitle">
+				<ui:insert name="title" />
+			</div>
+			
+			<div class="layoutCenterContent">
+				<ui:insert name="content" />
+			</div>
+			
+		</div>
+
+		<ui:insert name="footer">
+			<ui:include src="footer.xhtml" />
+		</ui:insert>
+
+		<ui:insert name="modalPanels" />
+		
+		<p:ajaxStatus styleClass="ajaxStatus">  
+    		<f:facet name="start">  
+       	 		<p:graphicImage value="/resources/images/loading.gif" />  
+    		</f:facet>  
+  
+    		<f:facet name="complete">  
+        		<h:outputText value="" />  
+    		</f:facet>  
+		</p:ajaxStatus>
+	</f:view>
+</h:body>
+
+</html>

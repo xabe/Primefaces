@@ -1,0 +1,58 @@
+/* Estilos de Ajax Status */
+
+.ajaxStatus {
+	width: 64px;
+	height: 64px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	z-index: 5000;
+}
+
+/* Estilos del centro de la pagina */
+
+.layoutCenter {
+	margin: 1em;
+}
+
+.layoutcenterDiv {
+	width: 100%;
+	text-align: center;
+}
+
+.layoutcenterDiv div {
+	width: 50%; 
+	margin: 0 auto; 
+	text-align: center;
+}
+
+.layoutcenterDiv div table {
+	width: 50%; 
+	margin: 5em;
+	text-align: center;
+}
+
+.indexCover {
+	text-align: center;
+}
+
+.layoutCenterTitle {
+	padding: 0.5em 1em 0em 1em;
+	font-weight: bold;
+	font-size: large;
+}
+
+.layoutCenterContent {
+	margin-top: 1em;
+	height: inherit !important;
+	margin: 0.5em;
+}
+
+.layoutCenterMessages {
+	float: right;
+	position: fixed;
+	right: 2em;
+	z-index: 1000;
+	padding-right: 2em;
+	padding-top: 3em;
+}

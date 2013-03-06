@@ -15,6 +15,7 @@
 
 	<modules>
 		<module>curso-primefaces-1</module>
+		<module>curso-primefaces-2</module>
 	</modules>
 
 	<properties>
